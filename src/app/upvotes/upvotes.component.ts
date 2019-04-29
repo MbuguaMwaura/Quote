@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpvotesComponent implements OnInit {
 
+  numberOfLikes:number = 0;
+
+  numberOfDislike:number = 0;
+
+  likeButtonClick(){
+    this.numberOfLikes++;
+  }
+  
+  dislikeButtonClick(){
+    this.numberOfDislike++;
+  }
+
   constructor() { }
 
   ngOnInit() {
