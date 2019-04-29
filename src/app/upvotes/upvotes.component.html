@@ -1,4 +1,4 @@
-<p>{{numberOfLikes}} <br> {{numberOfDislike}}</p>
+<p>{{numberOfLikes}} UpVotes <br> {{numberOfDislike}} DownVotes</p>
 
-<button>Upvote</button>
-<button>DownVotes</button>
+<button class="btn btn-success" (click)="likeButtonClick()">Upvote</button>
+<button class="btn btn-danger" (click)="dislikeButtonClick()">DownVotes</button>
