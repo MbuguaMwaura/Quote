@@ -14,7 +14,7 @@
 </div>
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}} <br> {{quote.description}} <br> {{quote.submitter}}</li>
+    <li>{{quote.name}} <br> {{quote.description}} <br> {{quote.submitter}} <br> {{quote.publish|time}}</li>
     <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
     <app-upvotes></app-upvotes>
   </div>
