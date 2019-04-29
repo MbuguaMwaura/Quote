@@ -7,10 +7,7 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
 
-  quotes = [
-    new Quote (1, 'winter is here'),
-    new Quote (2, 'valar murgulis'),
-  ]
+  quotes = []
 
   deleteQuote(isComplete,index){
     if (isComplete){
