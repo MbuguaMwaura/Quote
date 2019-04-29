@@ -1,12 +1,17 @@
 <div class="container-fluid">
   <div class="row">
-    <form>
+    <form #quoteForm='ngForm'>
       <div class="form-group">
 
         <label for="quote">Quote</label>
         <textarea class="form-control" id="text" rows="4" required [(ngModel)]="newQuote.name" name="name"></textarea>
-          Display {{newQuote.name}}
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+         
+          <p> Quote is Required</p>
+          
       </div>
+      </div>
+      <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
     </form>
   </div>
 </div>
