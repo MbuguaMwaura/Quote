@@ -1,21 +1,49 @@
-<div class="jumbotron">
-  <h1> My Quotes </h1>
+
+<div class="content">
+<div class="header">
+<img id="head" src="../../quotation-marks.svg" alt="">
+
+  <h1> Quotes </h1>
 </div>
 <div class="body">
-<div class="container">
+  <div class="container">
 
-<div class="container-fluid center">
-  <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div class="container-fluid center">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <hr>
+    </div>
   </div>
-  <hr>
 </div>
-</div>
-</div>
+<div class="body2">
 <ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}} <br> {{quote.description}} <br> {{quote.submitter}} <br> {{quote.publish|time}}</li>
-    <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-    <app-upvotes></app-upvotes>
+  
+  <div class="container">
+
+    <div *ngFor='let quote of quotes;let i = index'>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="output col-md-6">
+          <img id="out" src="../../quotation-marks.svg" alt="">
+          <p id="quote"><span>{{quote.description}}</span> <br> <em id="author"><strong>--{{quote.name}}</strong></em> <br><br><br> Submitted by: {{quote.submitter}} <br> Published {{quote.publish|time}}<p>
+         
+          <app-upvotes></app-upvotes>
+          <br><br>
+          <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
   </div>
 </ul>
+</div>
+
+</div>
+<div class="footer">
+  <h3>"Next to being witty the best thing is to quote another's wit" <br> <em>--Christian Bovee</em></h3>
+</div>
