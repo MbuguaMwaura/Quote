@@ -28,7 +28,7 @@
     <div *ngFor='let quote of quotes;let i = index'>
       <div class="row">
         <div class="col-md-3"></div>
-        <div class="output col-md-6">
+        <div id="quotes" class="output col-md-6">
           <img id="out" src="../../quotation-marks.svg" alt="">
           <p id="quote"><span>{{quote.description}}</span> <br> <em id="author"><strong>--{{quote.name}}</strong></em> <br><br><br> Submitted by: {{quote.submitter}} <br> Published {{quote.publish|time}}<p>
          

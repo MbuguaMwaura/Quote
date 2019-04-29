@@ -51,6 +51,7 @@ body{
     text-align: center;
     color: white;
     font-family: 'Caveat';font-size: 22px;
+    background-color: #372147;
 }
 #head{
     height: 50px;
@@ -72,6 +73,9 @@ span{
 }
 #author{
     float: right;
+}
+#quotes{
+    background-color: rgb(0,0,0,0.4);
 }
 @keyframes slidedown{
     from{
