@@ -26,11 +26,18 @@
     text-align: center;
     color: #e31c66;
     text-transform: uppercase;
-
+    transform: translateY(-12em);
+    animation: slidedown 2s 0.5s forwards;
 }
 .body2{
     background-color: #3c1067;
     color: white;
+   
+
+}
+#blur{
+    opacity: .0;
+    animation: blur 2s 0.5s forwards
 }
 
 .btn-warning{
@@ -65,4 +72,20 @@ span{
 }
 #author{
     float: right;
+}
+@keyframes slidedown{
+    from{
+        transform: translateY();
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes blur{
+    from{
+        opacity: .0;
+    }
+    to{
+        opacity: 1;
+    }
 }
