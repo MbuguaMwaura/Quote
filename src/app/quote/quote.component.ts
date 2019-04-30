@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Quote} from '../quote'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-quote',
@@ -31,3 +32,11 @@ export class QuoteComponent implements OnInit {
   }
 
 }
+
+$(document).ready(function(){
+  $("button#starting").click(function(){
+
+  $(".start").hide();
+  $(".hide").show();
+})
+  })

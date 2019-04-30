@@ -1,7 +1,8 @@
 
+<div class="hide">
 <div class="content">
 <div class="header">
-<img id="head" src="../../quotation-marks.svg" alt="">
+<img id="head" src="../../assets/images/quotation-marks.svg" alt="">
 
   <h1> Quotes </h1>
 </div>
@@ -29,7 +30,7 @@
       <div class="row">
         <div class="col-md-3"></div>
         <div id="quotes" class="output col-md-6">
-          <img id="out" src="../../quotation-marks.svg" alt="">
+          <img id="out" src="../../assets/images/quotation-marks.svg" alt="">
           <p id="quote"><span>{{quote.description}}</span> <br> <em id="author"><strong>--{{quote.name}}</strong></em> <br><br><br> Submitted by: {{quote.submitter}} <br> Published {{quote.publish|time}}<p>
          
           <app-upvotes></app-upvotes>
@@ -46,4 +47,21 @@
 </div>
 <div class="footer">
   <h3>"Next to being witty the best thing is to quote another's wit" <br> <em>--Christian Bovee</em></h3>
+</div>
+</div>
+
+<div class="container start">
+    <div class="css-typing">
+        <h2>
+            "Next to being witty the best thing is to quote another's wit"
+        </h2>
+        <p>
+            --Christian Bovee
+        </p>
+      
+      </div>
+      <button class="btn btn-primary" id="starting" onclick="unhide()">Click me :) </button>
+  <!-- <div class="row">
+  <p class="typewriter">"Next to being witty the best thing is to quote another's wit"  <em>--Christian Bovee</em></p>
+</div> -->
 </div>
